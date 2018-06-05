@@ -22,15 +22,3 @@ Step 2. Add the dependency
 dependencies {
   implementation 'com.github.rahulpareta:Puzzle:1.0.0'
 }
-```
-### Usage
-1. Add PuzzleView in your layout
-```xml
-<com.rp.puzzle.view.PuzzleView
-    app:pv_borderSize="2"
-    app:pv_borderColor="@color/colorPrimaryDark"
-    android:id="@+id/puzzle_view"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_margin="10dp"/>
-```
