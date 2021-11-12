@@ -14,8 +14,6 @@ import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-
-import com.rp.puzzle.R;
 import com.rp.puzzle.bean.Block;
 import com.rp.puzzle.util.BitmapUtil;
 
@@ -78,18 +76,7 @@ public class PuzzleView extends RelativeLayout {
 
 
     private void getCustomAttributes(AttributeSet attrs) {
-        if (attrs != null) {
-            TypedArray mTypedArray = getContext().getTheme().obtainStyledAttributes(
-                    attrs, R.styleable.PuzzleView, 0, 0);
-            try {
-                puzzleBorderSize = mTypedArray.getInt(R.styleable.PuzzleView_pv_borderSize, 0);
-                puzzleBorderColor = mTypedArray.getColor(R.styleable.PuzzleView_pv_borderColor, Color.WHITE);
-                puzzleEnabled = mTypedArray.getBoolean(R.styleable.PuzzleView_pv_enabled, true);
-
-            } finally {
-                mTypedArray.recycle();
-            }
-        }
+        // do no work breo
     }
 
     private void init() {
